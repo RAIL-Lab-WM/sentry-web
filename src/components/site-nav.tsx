@@ -7,7 +7,6 @@ const links = [
   { href: "#how-it-works", label: "How it works" },
   { href: "#try-it", label: "Try it" },
   { href: "#who-we-are", label: "Who we are" },
-  { href: "#partners", label: "Partners" },
 ];
 
 export function SiteNav() {
@@ -32,22 +31,23 @@ export function SiteNav() {
           : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-10">
         <a href="#top" className="text-xl font-semibold tracking-tight text-ink-950">
           SENTRY
         </a>
-        <div className="hidden items-center gap-8 md:flex">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="font-mono-label text-xs uppercase text-ink-600 transition-colors hover:text-blue-600"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-8">
+          <div className="hidden items-center gap-8 md:flex">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="font-mono-label text-xs uppercase text-ink-600 transition-colors hover:text-blue-600"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+
           <button
             onClick={() => setMobileOpen((open) => !open)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}

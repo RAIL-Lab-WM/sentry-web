@@ -31,12 +31,3 @@ export const nsfGrant = {
     vanderbilt: "/civic/Vanderbilt_University_logo.svg",
   },
 };
-
-export const partners = [
-  { name: "State Department of Transportation", type: "Agency Partner" },
-  { name: "Metro Infrastructure Authority", type: "Agency Partner" },
-  { name: "Transportation Research Board", type: "Research Partner" },
-  { name: "Center for Urban Mobility Systems", type: "Research Partner" },
-  { name: "National Highway Safety Program", type: "Advisory Partner" },
-  { name: "Civic Analytics Lab", type: "Technical Partner" },
-];

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, type Variants } from "motion/react";
-import HowItWorks from "@/components/HowItWorks";
 import { LiveDispatch } from "@/components/live-dispatch";
 
 const fadeUp: Variants = {
@@ -18,7 +17,7 @@ export function Hero() {
     <section id="top" className="relative bg-white pt-36 pb-20 md:pt-44 md:pb-28">
       <div className="grid-light pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_70%_55%_at_50%_0%,black,transparent)]" />
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-6xl px-6 md:px-10">
         <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_560px] lg:gap-10">
           <div>
             <motion.p
@@ -61,11 +60,30 @@ export function Hero() {
               variants={fadeUp}
               className="mt-8 flex flex-wrap gap-3"
             >
-              <button className="rounded-full bg-ink-950 px-6 py-3 text-sm font-medium text-white transition hover:bg-ink-800">
+              <motion.a
+                href="#try-it"
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.97 }}
+                className="rounded-full bg-ink-950 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-ink-800"
+              >
                 Get started
-              </button>
+              </motion.a>
 
-              <HowItWorks />
+              <motion.a
+                href="#how-it-works"
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.97 }}
+                className="group inline-flex items-center gap-2 rounded-full border border-ink-950/15 bg-white px-5 py-3 text-sm font-medium text-ink-950 shadow-sm transition-colors hover:border-ink-950/30"
+              >
+                How it works
+                <motion.span
+                  initial={{ x: 0 }}
+                  whileHover={{ x: 3 }}
+                  transition={{ type: "spring", stiffness: 400 }}
+                >
+                  →
+                </motion.span>
+              </motion.a>
             </motion.div>
           </div>
 

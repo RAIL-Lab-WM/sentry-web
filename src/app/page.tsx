@@ -3,7 +3,7 @@ import { Hero } from "@/components/sections/hero";
 import { Workflow } from "@/components/sections/how-it-works";
 import { TryIt } from "@/components/sections/try-it";
 import { WhoWeAre } from "@/components/sections/who-we-are";
-import { Partners } from "@/components/sections/partners";
+import { Faq } from "@/components/sections/faq";
 import { CtaFooter } from "@/components/sections/cta-footer";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
         <Workflow />
         <TryIt />
         <WhoWeAre />
-        <Partners />
+        <Faq />
         <CtaFooter />
       </main>
     </div>

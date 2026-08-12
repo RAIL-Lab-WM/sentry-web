@@ -4,7 +4,6 @@ import { nsfGrant } from "@/lib/site-data";
 const footerLinks = [
   { href: "#how-it-works", label: "How it works" },
   { href: "#who-we-are", label: "Who we are" },
-  { href: "#partners", label: "Partners" },
 ];
 
 export function CtaFooter() {
