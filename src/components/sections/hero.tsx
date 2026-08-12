@@ -66,7 +66,7 @@ export function Hero() {
                 whileTap={{ scale: 0.97 }}
                 className="rounded-full bg-ink-950 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-ink-800"
               >
-                Get started
+                Try it out
               </motion.a>
 
               <motion.a

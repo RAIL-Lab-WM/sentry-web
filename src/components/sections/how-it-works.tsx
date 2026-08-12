@@ -40,7 +40,7 @@ const steps = [
     label: "Adapt",
     title: "The plan adapts as new data arrives",
     description:
-      "New information updates the plan automatically, feeding straight back into detection — no manual replanning.",
+      "New information updates the feed automatically.",
   },
 ];
 
@@ -87,7 +87,7 @@ export function Workflow() {
           </h2>
           <p className="mt-4 text-base leading-relaxed text-ink-600">
             See how SENTRY turns a potential road closure into a coordinated
-            field inspection — the same system your team would run.
+            field inspection.
           </p>
 
           <Button onClick={playWorkflow} size="lg" className="mt-8 rounded-full px-6">

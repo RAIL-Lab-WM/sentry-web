@@ -162,8 +162,8 @@ export function TryIt() {
                     Your task
                   </p>
                   <p className="mt-2 text-sm leading-relaxed text-ink-800">
-                    Choose an officer manually or ask SENTRY for a
-                    recommendation.
+                    Choose an officer manually or use SENTRY for AI
+                    dispatch.
                   </p>
                 </div>
               </div>
