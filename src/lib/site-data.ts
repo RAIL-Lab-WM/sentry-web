@@ -1,6 +1,8 @@
+import { assetPath } from "@/lib/asset-path";
+
 export const principalInvestigator = {
   name: "Dr. Ayan Mukhopadhyay",
-  photo: "/civic/ayan_directory-2.jpg",
+  photo: assetPath("/civic/ayan_directory-2.jpg"),
   role: "Lead Principal Investigator",
   title: "Assistant Professor of Computer Science, William & Mary",
   summary:
@@ -25,9 +27,9 @@ export const nsfGrant = {
     "The objective of this Civic Innovation Challenge (CIVIC) project is to support research on building and piloting a prototype system that uses artificial intelligence and sensor data to automatically detect unpermitted closures. It seeks to enable real-time monitoring of road closures, guide inspectors with optimized routing tools, and support permit staff with better data for future planning.",
   url: "https://nsfcivicinnovation.org/project/3.0/data-driven-monitoring-and-optimizing-of-right-of-way-permits/",
   logos: {
-    civic: "/civic/CIVIC-Project.png",
-    nsf: "/civic/NSF-Logo.png",
-    williamAndMary: "/civic/WM_Rail_Logo.png",
-    vanderbilt: "/civic/Vanderbilt_University_logo.svg",
+    civic: assetPath("/civic/CIVIC-Project.png"),
+    nsf: assetPath("/civic/NSF-Logo.png"),
+    williamAndMary: assetPath("/civic/WM_Rail_Logo.png"),
+    vanderbilt: assetPath("/civic/Vanderbilt_University_logo.svg"),
   },
 };
